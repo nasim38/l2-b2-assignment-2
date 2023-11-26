@@ -1,0 +1,18 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+
+# local env files
+.env*.local
+.env
+
+# uploaded file directories
+modules/common/uploadedFiles
+modules/reportGeneration/assets/data.json
