@@ -16,3 +16,4 @@
 # uploaded file directories
 modules/common/uploadedFiles
 modules/reportGeneration/assets/data.json
+.vercel

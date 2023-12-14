@@ -24,7 +24,7 @@ const userValidationSchema = z.object({
     city: z.string(),
     country: z.string(),
   }),
-  orders: z.array(productValidationSchema),
+  orders: z.array(productValidationSchema).optional(),
 });
 
 export { userValidationSchema, productValidationSchema };
