@@ -1,7 +1,7 @@
 import { Product, TUser } from "./user.interface";
 import { User } from "./user.model";
 
-const createUser = async (newUserData: TUser) => {
+const createUser = async (newUserData: Partial<TUser>) => {
   try {
     const result = await User.create(newUserData);
     return result;
@@ -36,7 +36,7 @@ const getSingleUser = async (userId: number) => {
   }
 };
 
-const updateSingleUser = async (userId: number, updateData: TUser) => {
+const updateSingleUser = async (userId: number, updateData: Partial<TUser>) => {
   try {
     // checking for user existance
     const existingUser = await User.isUserExists(userId);

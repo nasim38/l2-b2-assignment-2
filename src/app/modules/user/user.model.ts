@@ -42,7 +42,7 @@ userSchema.pre("save", async function (next) {
 });
 
 // using this post middleware for removing password field in case of GET req.
-userSchema.post("save", function (user, next) {
+userSchema.post("save", function (user: any, next) {
   // removing password field form user response
   delete user._doc.password;
   next();

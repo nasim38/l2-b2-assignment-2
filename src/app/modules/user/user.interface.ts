@@ -7,6 +7,7 @@ export type Product = {
 };
 
 export type TUser = {
+  save(): unknown;
   userId: number;
   username: string;
   password: string;
